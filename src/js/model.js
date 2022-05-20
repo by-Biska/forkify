@@ -5,7 +5,7 @@ export const state = {
 export const loadRecipe = async function (id) {
   try {
     const res = await fetch(
-      `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
+      `/${id}`
     );
     const data = await res.json();
 
